@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOY_PATH=/home/siste473/fisio.somarsaude.com.br
+    - echo "Iniciando deploy para $DEPLOY_PATH"
+    - /bin/cp -R ./* $DEPLOY_PATH
+    - echo "Deploy concluído com sucesso!"
